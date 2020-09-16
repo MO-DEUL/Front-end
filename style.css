@@ -1,0 +1,162 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #1c751c;
+    --accent-color: #ffa500;
+}
+
+* {
+    /* Tells the browser to account for any border and 
+    padding in the values you specify for an element's 
+    width and height. */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*상단 메뉴 바*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+}
+
+/*로고*/
+.navbar_logo {
+    z-index: 1;
+    font-size: 35px;
+    margin-left: 20px;
+    color: var(--text-color);
+}
+
+.navbar_logo i {
+    color: var(--accent-color);
+}
+
+/*메인 메뉴*/
+.menu > ul {
+    display: inline-block;
+}
+
+.menu {
+    text-align: center;
+    font-size: 23px;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu > ul > li > a {
+    display: block;
+    padding: 0px 30px;
+}
+
+.menu > ul > li:hover > a {
+    color: #A566FF;
+}
+
+/*회원*/
+.member > ul {
+    display: inline-block;
+}
+
+.member {
+    text-align: center;
+    font-size: 18px;
+    margin-right: 70px;
+}
+
+.member > ul > li {
+    display: inline-block;
+    list-style: none;
+}
+
+.member > ul > li > a {
+    display: block;
+    padding: 8px;
+}
+
+.member > ul > li:hover > a {
+    color: #A566FF;
+}
+
+/*사이드바 아이콘*/
+input[id="menuicon"] {
+    display: none;
+}
+
+input[id="menuicon"] + label {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: center;
+    right: calc(25px);
+    transition: all .35s;
+    cursor: pointer;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+input[id="menuicon"] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #000;
+    transition: all .35s;
+}
+
+input[id="menuicon"] + label span:nth-last-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"] + label span:nth-last-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"] + label span:nth-last-child(3) {
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    position: fixed;
+    top: -300px;
+    left: 0px;
+    
+    transition: all .35s;
+}
+
+
+input[id="menuicon"]:checked + label + div {top: 0;}
+
