@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"/>
     <title>모들</title>
     <script
       src="https://kit.fontawesome.com/2d323a629b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
     <nav class="navbar">
-      <div class="navbar_logo">
-        <a href="main.html">
-          <img class="main_logo" src="images/modeul_vertical_black.png" />
-        </a>
-      </div>
-
-      <nav class="menu">
+        <div class="navbar_logo">
+            <i class="fab fa-accusoft"></i>
+            <a href="#">MO:DUEL</a>
+        </div>
+   
+    <nav class="menu">
         <ul>
-          <li><a href="views/search.html">쉐어하우스 찾기</a></li>
-          <li><a href="views/upload.html">쉐어하우스 등록하기</a></li>
-          <li><a href="views/userDetail.html">내정보</a></li>
+            <li><a href="#a">쉐어하우스 찾기</a></li>
+            <li><a href="#a">쉐어하우스 등록하기</a></li>
+            <li><a href="#a">북마크</a></li>
+            <li><a href="#a">내정보</a></li>
+            <li><a href="#a">고객센터</a></li>
         </ul>
-      </nav>
-
-      <nav class="member">
-        <ul>
-          <li><a href="views/login.html">LOGIN</a></li>
-          <li><a href="views/join.html">JOIN</a></li>
-        </ul>
-      </nav>
-
-      <input type="checkbox" id="menuicon" />
-      <label for="menuicon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <div class="sidebar"></div>
     </nav>
-  </body>
-</html>
+   
+    <nav class="member">
+        <ul>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#a">JOIN</a></li>
+        </ul>
+    </nav>
+
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="sidebar">
+    </div>
+    </nav>
+    <section id="search">
+        <div class="search_box">
+            <div class="form">
+                <h2>어떤 곳에서, 어떤 사람과<br>살고 싶으신가요</h2>
+                <div class="searchBx">
+                    <input class="search_box_txt" type="search" placeholder="검색어를 입력해 주세요">
+                    <input class="search_box_btn" type="submit" value="방 찾기">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html> 
